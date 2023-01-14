@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>PAINTER - Painting Company Website Template</title>
+    <title>SCP</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -34,10 +34,92 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- additional style for description of swapping image -->
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+  position: relative;
+  max-width: 99000px;
+  margin: 0 ;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(241, 234, 52, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 0px;
+}
+</style>
+<!--styling for about and notice-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 40%;
+}
+
+.right {
+  width: 60%;
+  float: right;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  clear: both;
+}
+</style>
+
+<!--Lower floating css-->
+<script src="test/float-panel.js"></script>
+
+    
+       <style type="text/css">
+    
+    
+    #bottom_marquee{
+    background-color: rgb(166, 166, 158);
+    padding:0.5em 0;
+    font-size: 20px; 
+    position: fixed;
+    bottom: 0px;
+    color:rgb(0, 0, 0);
+    z-index: 21;
+}
+    
+    </style>
+
     
 </head>
 
 <body>
+                           
     <!-- Topbar Start -->
     <div class="container-fluid bg-primary d-none d-lg-block">
         <div class="container">
@@ -46,23 +128,25 @@
                     <div class="d-inline-flex align-items-center">
                         <a class="text-dark py-2 pe-3 border-end border-white" href=""><i class="bi bi-telephone text-secondary me-2"></i>+012 345 6789</a>
                         <a class="text-dark py-2 px-3" href=""><i class="bi bi-envelope text-secondary me-2"></i>info@example.com</a>
+                        <div id="google_translate_element"></div>
+
                     </div>
                 </div>
                 <div class="col-md-6 text-center text-lg-end">
                     <div class="d-inline-flex align-items-center">
-                        <a class="text-body py-2 px-3 border-end border-white" href="">
+                        <a class="text-body py-2 px-3 border-end border-white" href="https://hi-in.facebook.com/people/Sanskritik-Chetna-Parishad/100069612294268/" target="_blank">
                             <i class="fab fa-facebook-f text-secondary"></i>
                         </a>
                         <a class="text-body py-2 px-3 border-end border-white" href="">
                             <i class="fab fa-twitter text-secondary"></i>
                         </a>
-                        <a class="text-body py-2 px-3 border-end border-white" href="">
+                        <a class="text-body py-2 px-3 border-end border-white" href="https://in.linkedin.com/in/sanskritik-chetna-parishad-61890a219?"target="_blank">
                             <i class="fab fa-linkedin-in text-secondary"></i>
                         </a>
-                        <a class="text-body py-2 px-3 border-end border-white" href="">
+                        <a class="text-body py-2 px-3 border-end border-white" href="https://www.instagram.com/scpgbpuat/?hl=en"target="_blank">
                             <i class="fab fa-instagram text-secondary"></i>
                         </a>
-                        <a class="text-body py-2 ps-3" href="">
+                        <a class="text-body py-2 ps-3" href="https://www.youtube.com/@sanskritikchetnaparishad2110"target="_blank">
                             <i class="fab fa-youtube text-secondary"></i>
                         </a>
                     </div>
@@ -81,7 +165,7 @@
         </a>
         <!-- gbpuat icon start -->
         <a href="index.html" class="navbar-brand p-0",>
-                <h4 class="m-0 text-uppercase text-primary "><a class="logo-img" href="https://www.gbpuat.ac.in/" title="Logo">
+                <h4 class="m-0 text-uppercase text-primary "><a class="logo-img" href="https://www.gbpuat.ac.in/"target="_blank" title="Logo">
                 <img itemprop="logo"  src="Logo1+.png" alt="" class="lazyautosizes lazyloaded"  sizes="40px"></h4>
         </a>
         <!-- gbpuat icon End -->
@@ -122,17 +206,20 @@
                         <li data-target="#headerSlider" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
+                        <div class="container">
+
                         <div class="carousel-item active">
-                            <img src="img/img/slider/header-slider-1.jpg" alt="SCP">
+                            <img src="img/img/slider/header-slider-1.jpg" alt="SCP" width=100% height="500">
+                            <div class="content"><h3>&nbsp;&nbsp;&nbsp;torrento</h3></div>
                         </div>
-    
                         <div class="carousel-item">
-                            <img src="img/img/slider/header-slider-2.jpg" alt="scp">
+                            <img src="img/img/slider/header-slider-2.jpg" alt="scp" width=100% height="500">
+                            <div u="thumb" class="content" style="text-align:left"><h3>&nbsp;&nbsp;&nbsp;sydney</h3></div>
                         </div>
-    
                         <div class="carousel-item">
-                            <img src="img/img/slider/header-slider-3.jpg" alt="scp">
-                        </div>
+                            <img src="img/img/slider/header-slider-3.jpg" width=100% height="500" alt="scp">
+                            <div u="thumb"class="content" style="text-align:left"><h3>&nbsp;&nbsp;&nbsp;melbourn</h3></div>
+                        </div></div>
                     </div>
     
                     <a class="carousel-control-prev" href="#headerSlider" role="button" data-slide="prev">
@@ -147,197 +234,62 @@
                 <!-- Slider Section End -->
             </div>
 
-    <!-- Hero Start -->
-    <div class="container-fluid bg-primary py-5 bg-hero" style="margin-bottom: 90px;">
-        <div class="container py-5">
-            <div class="row justify-content-start">
-                <div class="col-lg-8 text-center text-lg-start">
-                    <h1 class="display-1 text-dark">We Bring Your Home To Lively Colors</h1>
-                    <p class="fs-4 text-dark mb-4">Nonumy diam dolores est ipsum diam amet lorem clita clita sit eirmod duo clita dolore dolor ut diam diam justo sed est</p>
-                    <div class="pt-2">
-                        <a href="" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mx-2">Get A Quote</a>
-                        <a href="" class="btn btn-outline-secondary rounded-pill py-md-3 px-md-5 mx-2">Contact Us</a>
-                    </div>
+
+    <!--trying about and notice segment-->
+
+        <div class="container py-2">
+            <div class="row g-0 justify-content-center">
+                <div class="row">
+                  <div class="column left" style="background-color:rgb(255, 255, 245);">
+                    <h2>ABOUT</h2>
+                    <p allign="justify">Sanskritik Chetna Parishad is a University Level Professional Body, owned and guided by Dean Student Welfare, GBPUAT, Pantnagar. It is a decades-old brilliant organization which has been working for skill-development of students at the university level, for organizing University and national level conferences and debates, and for promotion of our uniqueness in cultural, national and ethical values among all.  </p>    
+        <button name="more" value="View More" class="button" style="float:right;" onclick="aboutFunction()">Show More</button>
+        <script>
+        function aboutFunction() 
+        {
+          window.alert("heee :) button about me .....\n ok not bad not bad");
+        }
+        </script>   
+                  </div>
+                  
+                  <div class="column right" style="background-color:rgb(169, 219, 245);">
+                    <h2>NOTICE</h2>
+                    <p>Some text..</p>
+                  </div>
                 </div>
-            </div>
-        </div>
     </div>
-    <!-- Hero End -->
+</div>   
 
 
-    <!-- About Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row gx-0 mb-3 mb-lg-0">
-                <div class="col-lg-6 my-lg-5 py-lg-5">
-                    <div class="about-start bg-primary p-5">
-                        <h1 class="display-5 mb-4">Welcome To Painter</h1>
-                        <p>Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et, tempor sit sit diam amet et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor magna dolore erat amet </p>
-                        <a href="" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">Contact Us</a>
-                    </div>
-                </div>
-                <div class="col-lg-6" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/about-1.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-            </div>
-            <div class="row gx-0">
-                <div class="col-lg-6" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/about-2.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-6 my-lg-5 py-lg-5">
-                    <div class="about-end bg-primary p-5">
-                        <h1 class="display-5 mb-4">Why Choose Us?</h1>
-                        <p>Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et, tempor sit sit diam amet et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor magna dolore erat amet </p>
-                        <a href="" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">Get A Quote</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
+    <!-- Quote Start
+    <hr class="clean">
+
+<div class="trans-row"> 
     
-
-    <!-- Services Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
-                <h1 class="display-5">Professional Painting Services</h1>
-                <hr class="w-25 mx-auto text-primary" style="opacity: 1;">
-            </div>
-            <div class="row gy-4 gx-3">
-                <div class="col-lg-4 col-md-6 pt-5">
-                    <div class="service-item d-flex flex-column align-items-center justify-content-center text-center p-5 pt-0">
-                        <div class="service-icon p-3">
-                            <div><i class="fa fa-2x fa-paint-brush"></i></div>
-                        </div>
-                        <h3 class="mt-5">Regular Painting</h3>
-                        <a class="btn shadow-none text-secondary" href="">View Detail<i class="bi bi-arrow-right ms-1"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 pt-5">
-                    <div class="service-item d-flex flex-column align-items-center justify-content-center text-center p-5 pt-0">
-                        <div class="service-icon p-3">
-                            <div><i class="fa fa-2x fa-paint-roller"></i></div>
-                        </div>
-                        <h3 class="mt-5">Wall Painting</h3>
-                        <a class="btn shadow-none text-secondary" href="">View Detail<i class="bi bi-arrow-right ms-1"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 pt-5">
-                    <div class="service-item d-flex flex-column align-items-center justify-content-center text-center p-5 pt-0">
-                        <div class="service-icon p-3">
-                            <div><i class="fa fa-2x fa-brush"></i></div>
-                        </div>
-                        <h3 class="mt-5">Floor Coating</h3>
-                        <a class="btn shadow-none text-secondary" href="">View Detail<i class="bi bi-arrow-right ms-1"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 pt-5">
-                    <div class="service-item d-flex flex-column align-items-center justify-content-center text-center p-5 pt-0">
-                        <div class="service-icon p-3">
-                            <div><i class="fa fa-2x fa-eraser"></i></div>
-                        </div>
-                        <h3 class="mt-5">Graffiti Removal</h3>
-                        <a class="btn shadow-none text-secondary" href="">View Detail<i class="bi bi-arrow-right ms-1"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 pt-5">
-                    <div class="service-item d-flex flex-column align-items-center justify-content-center text-center p-5 pt-0">
-                        <div class="service-icon p-3">
-                            <div><i class="fa fa-2x fa-spray-can"></i></div>
-                        </div>
-                        <h3 class="mt-5">Mildew Removal</h3>
-                        <a class="btn shadow-none text-secondary" href="">View Detail<i class="bi bi-arrow-right ms-1"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 pt-5">
-                    <div class="service-item d-flex flex-column align-items-center justify-content-center text-center p-5 pt-0">
-                        <div class="service-icon p-3">
-                            <div><i class="fa fa-2x fa-city"></i></div>
-                        </div>
-                        <h3 class="mt-5">Window Washing</h3>
-                        <a class="btn shadow-none text-secondary" href="">View Detail<i class="bi bi-arrow-right ms-1"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="row">
+            
+        <div class="col-sm-4 col-margin">
+        <p class="heading-p">
+            <h4><b>About SANSKRITIK CHETNA PARISHAD</b></h4>
+        </p> 
+        <br>
+      
+        <p allign="justify">Sanskritik Chetna Parishad is a University Level Professional Body, owned and guided by Dean Student Welfare, GBPUAT, Pantnagar. It is a decades-old brilliant organization which has been working for skill-development of students at the university level, for organizing University and national level conferences and debates, and for promotion of our uniqueness in cultural, national and ethical values among all.  </p>    
+        <button name="more" value="View More" class="button" style="float:right;" onclick="aboutFunction()">Show More</button>
+        <script>
+        function aboutFunction() 
+        {
+          window.alert("heee :) button about me .....\n ok not bad not bad");
+        }
+        </script>    
     </div>
-    <!-- Services End -->
-
-
-    <!-- Quote Start -->
     
+    </div>            
+</div> -->
     <!-- Quote End -->
-     
-
-    <!-- Team Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
-                <h1 class="display-5">Dedicated Team Members</h1>
-                <hr class="w-25 mx-auto text-primary" style="opacity: 1;">
-            </div>
-            <div class="row g-3">
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-item">
-                        <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
-                        <div class="team-text">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                            <div class="mt-auto mb-3">
-                                <h4 class="mb-1">Full Name</h4>
-                                <span class="text-uppercase">Designation</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-item">
-                        <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
-                        <div class="team-text">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                            <div class="mt-auto mb-3">
-                                <h4 class="mb-1">Full Name</h4>
-                                <span class="text-uppercase">Designation</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-item">
-                        <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
-                        <div class="team-text">
-                            <div class="team-social">
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                            <div class="mt-auto mb-3">
-                                <h4 class="mb-1">Full Name</h4>
-                                <span class="text-uppercase">Designation</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
-
-
+    
     <!-- Message Start -->
-    <div class="container-fluid bg-primary bg-testimonial py-5" style="margin: 10px 0;">
+    <div class="container-fluid bg-primary bg-testimonial py-md-0" style="margin: 10px 0; padding: 90px">
         <div class="container py-5">
             <div class="row g-0 justify-content-center">
                 <div class="col-lg-10">
@@ -347,10 +299,10 @@
                         <div class="testimonial-item">
                             <p class="fs-4 fw-normal"><i class="fa fa-quote-left text-secondary me-3"></i>Strength is Life, Weakness is Death. Expansion is Life, Contraction is Death. Love is Life, Hatred is Death.</p>
                             <div class="d-flex align-items-center">
-                                <!--img class="img-fluid p-1 bg-secondary" src="img/testimonial-1.jpg" alt=""-->
+                                <img class="img-fluid p-1 bg-secondary" src="img/testimonial-1.jpg" alt="">
                                 <div class="ps-3">
                                     <h3>- Swami Vivekananda -</h3>
-                                    <!--span class="text-uppercase">Profession</span-->
+                                    <span class="text-uppercase">Profession</span>
                                 </div>
                             </div>
                         </div>
@@ -360,10 +312,10 @@
                         <div class="testimonial-item">
                             <p class="fs-4 fw-normal"><i class="fa fa-quote-left text-secondary me-3"></i>Take up one idea. Make that one idea your life  think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body, be full of that idea, and just leave every other idea alone. This is the way to success.</p>
                             <div class="d-flex align-items-center">
-                                <!--img class="img-fluid p-1 bg-secondary" src="img/testimonial-2.jpg" alt=""-->
+                                <img class="img-fluid p-1 bg-secondary" src="img/testimonial-2.jpg" alt="">
                                 <div class="ps-3">
                                     <h3>- Swami Vivekananda -</h3>
-                                    <!--span class="text-uppercase">Profession</span-->
+                                    <span class="text-uppercase">Profession</span>
                                 </div>
                             </div>
                         </div>
@@ -373,32 +325,32 @@
             </div>
         </div>
     </div>
-    <!-- Testimonial End -->
+    <!--message aka Testimonial End -->
 
 
     <!-- Blog Start -->
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="text-center mx-auto mb-5" style="max-width: 500px;">
-                <h1 class="display-5">Latest Articles From Painting Blog</h1>
+                <h1 class="display-5"><b>Latest Articles</h1>
                 <hr class="w-25 mx-auto text-primary" style="opacity: 1;">
             </div>
             <div class="row g-3">
                 <div class="col-xl-4 col-lg-6">
                     <div class="blog-item bg-primary">
-                        <img class="img-fluid w-100" src="img/blog-1.jpg" alt="">
+                        <img class="img-fluid w-100" src="https://scppsgbpuat.files.wordpress.com/2022/02/whatsapp-image-2022-02-04-at-21.25.39.jpeg" alt="">
                         <div class="d-flex align-items-center">
                             <div class="bg-secondary mt-n4 d-flex flex-column flex-shrink-0 justify-content-center text-center me-4" style="width: 60px; height: 100px;">
                                 <i class="fa fa-calendar-alt text-primary mb-2"></i>
-                                <p class="m-0 text-white">Jan 01</p>
-                                <small class="text-white">2045</small>
+                                <p class="m-0 text-white">Feb 05</p>
+                                <small class="text-white">2022</small>
                             </div>
-                            <a class="h4 m-0 text-truncate me-4" href="">Dolor clita vero elitr sea stet dolor justo  diam</a>
+                            <a class="h4 m-0 text-truncate me-4" href="https://scppsgbpuat.wordpress.com/2022/02/05/बसंत-ॠतु-प्रकृति-का-अद्भु/" target=_blank>Basant Panchami</a>
                         </div>
                         <div class="d-flex justify-content-between border-top border-secondary p-4">
                             <div class="d-flex align-items-center">
-                                <img class="rounded-circle me-2" src="img/user.jpg" width="30" height="30" alt="">
-                                <small class="text-uppercase">John Doe</small>
+                                <img class="rounded-circle me-2" src="https://2.gravatar.com/avatar/dc9e02aea18c7600ff3e159c6431b0f2" width="30" height="30" alt="">
+                                <small class="text-uppercase">Nandani Mishra</small>
                             </div>
                             <div class="d-flex align-items-center">
                                 <small class="ms-3"><i class="fa fa-eye text-secondary me-2"></i>12345</small>
@@ -409,19 +361,19 @@
                 </div>
                 <div class="col-xl-4 col-lg-6">
                     <div class="blog-item bg-primary">
-                        <img class="img-fluid w-100" src="img/blog-2.jpg" alt="">
+                        <img class="img-fluid w-100" src="https://cdn.isha.ws/public/wallpapers/wallpaper/shiva-the-adiyogi.jpg" alt="">
                         <div class="d-flex align-items-center">
                             <div class="bg-secondary mt-n4 d-flex flex-column flex-shrink-0 justify-content-center text-center me-4" style="width: 60px; height: 100px;">
                                 <i class="fa fa-calendar-alt text-primary mb-2"></i>
-                                <p class="m-0 text-white">Jan 01</p>
-                                <small class="text-white">2045</small>
+                                <p class="m-0 text-white">March 01</p>
+                                <small class="text-white">2022</small>
                             </div>
-                            <a class="h4 m-0 text-truncate me-4" href="">Dolor clita vero elitr sea stet dolor justo  diam</a>
+                            <a class="h4 m-0 text-truncate me-4" href="https://scppsgbpuat.wordpress.com/2022/03/01/mahashivratri-a-night-of-immense-possibilities/" target=_blank >Mahashivratri : A Night of immense Spiritual and Scientific significance</a>
                         </div>
                         <div class="d-flex justify-content-between border-top border-secondary p-4">
                             <div class="d-flex align-items-center">
-                                <img class="rounded-circle me-2" src="img/user.jpg" width="30" height="30" alt="">
-                                <small class="text-uppercase">John Doe</small>
+                                <img class="rounded-circle me-2" src="https://2.gravatar.com/avatar/dc9e02aea18c7600ff3e159c6431b0f2" width="30" height="30" alt="">
+                                <small class="text-uppercase">Aishna Srivastava</small>
                             </div>
                             <div class="d-flex align-items-center">
                                 <small class="ms-3"><i class="fa fa-eye text-secondary me-2"></i>12345</small>
@@ -432,19 +384,19 @@
                 </div>
                 <div class="col-xl-4 col-lg-6">
                     <div class="blog-item bg-primary">
-                        <img class="img-fluid w-100" src="img/blog-3.jpg" alt="">
+                        <img class="img-fluid w-100" src="https://scppsgbpuat.files.wordpress.com/2022/02/azadhindfauj.jpg" alt="">
                         <div class="d-flex align-items-center">
                             <div class="bg-secondary mt-n4 d-flex flex-column flex-shrink-0 justify-content-center text-center me-4" style="width: 60px; height: 100px;">
                                 <i class="fa fa-calendar-alt text-primary mb-2"></i>
-                                <p class="m-0 text-white">Jan 01</p>
-                                <small class="text-white">2045</small>
+                                <p class="m-0 text-white">Feb 23</p>
+                                <small class="text-white">2022</small>
                             </div>
-                            <a class="h4 m-0 text-truncate me-4" href="">Dolor clita vero elitr sea stet dolor justo  diam</a>
+                            <a class="h4 m-0 text-truncate me-4" href="https://scppsgbpuat.wordpress.com/2022/02/23/the-forgotten-history/" target=_blank>The Forgotten History</a>
                         </div>
                         <div class="d-flex justify-content-between border-top border-secondary p-4">
                             <div class="d-flex align-items-center">
-                                <img class="rounded-circle me-2" src="img/user.jpg" width="30" height="30" alt="">
-                                <small class="text-uppercase">John Doe</small>
+                                <img class="rounded-circle me-2" src="https://2.gravatar.com/avatar/dc9e02aea18c7600ff3e159c6431b0f2" width="30" height="30" alt="">
+                                <small class="text-uppercase">Mukul Giri Goswami</small>
                             </div>
                             <div class="d-flex align-items-center">
                                 <small class="ms-3"><i class="fa fa-eye text-secondary me-2"></i>12345</small>
@@ -458,21 +410,66 @@
     </div>
     <!-- Blog End -->
 
+    
 
-    <!-- Call To Action Start -->
-    <div class="container-fluid bg-primary bg-call-to-action py-5" style="margin-top: 90px;">
+<!--work spaCE for comment-->
+<section>
+    <div class="container-fluid bg-primary bg-testimonial py-5" style="margin: 10px 0;">
         <div class="container py-5">
-            <div class="row g-0 justify-content-start">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-4">Do You Have Any Project?</h1>
-                    <p class="fs-4 fw-normal">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat dolor rebum sit ipsum.</p>
-                    <a href="" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">Contact Us</a>
+            <div class="row g-0 justify-content-center">
+                <div class="col-lg-10">
+                    <h1 class="display-8 mb-4">Feedback Box</h1>
+                    <div class="owl-carousel testimonial-carousel">
+                        <!--start custom message-->
+                        <div class="testimonial-item">
+                            <div class="d-flex align-items-center">
+                                <!--img class="img-fluid p-1 bg-secondary" src="img/testimonial-1.jpg" alt=""-->
+                                <div class="ps-3">
+                                    <div class="rt-container">
+                                        <div class="col-rt-10">
+                                            <div class="Scriptcontent">  
+                                               </div>
+                                          </div>
+                                    <!--span class="text-uppercase">Profession</span-->
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Call To Action Start -->
-    
+            
+                  
+    <!-- partial:index.partial.html -->
+    <section id="app">
+        <div class="container">
+            <div class="row">
+              <div class="col-6">
+                <div class="comment">
+              <p v-for="items in item" v-text="items"></p>
+                </div><!--End Comment-->
+                </div><!--End col -->
+                </div><!-- End row -->
+            <div class="row">
+              <div class="col-20">
+                <input type="text" name="full_name" placeholder="Full Name..."> 
+            <input type="email" name="email" placeholder="Email Address...">
+            <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+              </div><!-- End col -->
+            </div><!--End Row -->
+          </div><!--End Container -->
+        </section><!-- end App -->
+              <!-- partial -->
+              <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+              <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+              <script  src="comment/js/script.js"></script>
+                         
+                      </div>
+                  </div>
+                  </div>
+              </section>
+
+<!--WORK SPACE for comment TERMINATED-->
+
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark bg-footer text-light py-5">
@@ -482,21 +479,9 @@
                     <h4 class="text-primary">Get In Touch</h4>
                     <hr class="w-25 text-secondary mb-4" style="opacity: 1;">
                     <p class="mb-4">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor</p>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>info@example.com</p>
-                    <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>+012 345 67890</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-primary">Our Services</h4>
-                    <hr class="w-25 text-secondary mb-4" style="opacity: 1;">
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Regular Painting</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Wall Painting</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Floor Coating</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Graffiti Removal</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Mildew Removal</a>
-                        <a class="text-light" href="#"><i class="fa fa-angle-right me-2"></i>Window Washing</a>
-                    </div>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Pantnagar</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>scp@example.com</p>
+                    <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>+91 xxxxx xxxxx</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-primary">Quick Links</h4>
@@ -510,20 +495,14 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-primary">Newsletter</h4>
+                    <h4 class="text-primary">Follow US</h4>
                     <hr class="w-25 text-secondary mb-4" style="opacity: 1;">
-                    <form action="">
-                        <div class="input-group">
-                            <input type="text" class="form-control p-3 border-0" placeholder="Your Email">
-                            <button class="btn btn-primary">Sign Up</button>
-                        </div>
-                    </form>
-                    <h6 class="text-primary mt-4 mb-3">Follow Us</h6>
                     <div class="d-flex">
                         <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://hi-in.facebook.com/people/Sanskritik-Chetna-Parishad/100069612294268/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://in.linkedin.com/in/sanskritik-chetna-parishad-61890a219?"target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://www.instagram.com/scpgbpuat/?hl=en"target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle"href="https://www.youtube.com/@sanskritikchetnaparishad2110"target="_blank"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
@@ -544,7 +523,59 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-secondary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    
+    <!--Translator part-->
 
+
+<!--Lower floating for lates event info-->
+
+<marquee id="bottom_marquee" scrollamount="11">  <div onMouseOver="document.getElementById('bottom_marquee').stop();" onMouseOut="document.getElementById('bottom_marquee').start();">
+
+    <b> Float information for latest event information </b>   &nbsp;|
+       
+      
+      </div>  </marquee>
+      <!--Lower floating for lates event info END-->
+      <script language="javascript">
+        window.onload = function() {
+          scrollDiv_init();
+        };
+        ScrollRate = 35;
+        function scrollDiv_init() {
+          DivElmnt = document.getElementById('MyDivName');
+          DivElmnt.onmouseover = pauseDiv;
+          DivElmnt.onmouseout = resumeDiv;
+          ReachedMaxScroll = false;
+          DivElmnt.scrollTop = 0;
+          PreviousScrollTop  = 0;
+          ScrollInterval = setInterval('scrollDiv()', ScrollRate);
+        }
+        function scrollDiv() {
+          if (!ReachedMaxScroll) {
+            DivElmnt.scrollTop = PreviousScrollTop;
+            PreviousScrollTop++;
+            ReachedMaxScroll = DivElmnt.scrollTop >= (DivElmnt.scrollHeight - DivElmnt.offsetHeight);
+          }
+          else {
+            DivElmnt.scrollTop = PreviousScrollTop = 0;
+            ReachedMaxScroll = false;
+        /*
+            ReachedMaxScroll = (DivElmnt.scrollTop == 0)?false:true;
+            DivElmnt.scrollTop = PreviousScrollTop;
+            PreviousScrollTop--;
+        */
+          }
+        }
+        function pauseDiv() {
+          clearInterval(ScrollInterval);
+        }
+        function resumeDiv() {
+          PreviousScrollTop = DivElmnt.scrollTop;
+          ScrollInterval = setInterval('scrollDiv()', ScrollRate);
+        }
+        </script>
+        
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

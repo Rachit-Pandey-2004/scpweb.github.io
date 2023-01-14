@@ -292,6 +292,7 @@
     background-size: contain;
 }
 
+ 
 @media (max-width: 991.98px) {
     .bg-call-to-action,
     .bg-footer {
