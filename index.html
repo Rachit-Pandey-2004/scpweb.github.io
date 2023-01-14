@@ -7,6 +7,10 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- yatranslate -->
+        <script src="./js/yatranslate.js"></script>
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -128,12 +132,16 @@ body {
                     <div class="d-inline-flex align-items-center">
                         <a class="text-dark py-2 pe-3 border-end border-white" href=""><i class="bi bi-telephone text-secondary me-2"></i>+012 345 6789</a>
                         <a class="text-dark py-2 px-3" href=""><i class="bi bi-envelope text-secondary me-2"></i>info@example.com</a>
-                        <div id="google_translate_element"></div>
+                        
 
                     </div>
                 </div>
                 <div class="col-md-6 text-center text-lg-end">
                     <div class="d-inline-flex align-items-center">
+                        
+                        <a class="text-body py-2 px-3 border-end border-white" href="">
+                            <i class="lang__link lang__link_select" data-lang-active></i>
+                        </a>
                         <a class="text-body py-2 px-3 border-end border-white" href="https://hi-in.facebook.com/people/Sanskritik-Chetna-Parishad/100069612294268/" target="_blank">
                             <i class="fab fa-facebook-f text-secondary"></i>
                         </a>
@@ -156,7 +164,8 @@ body {
     </div>
     <!-- Topbar End -->
 
-
+    <div class="lang lang_fixed">
+        <div id="ytWidget" style="display: none;"></div>
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm px-0 py-0 py-lg-0">
         <a href="index.html" class="navbar-brand p-0">
@@ -185,6 +194,18 @@ body {
                         <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                     </div>
                 </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><img src="\img\language-translator.png"alt="Lang"></a>
+                  
+                    <div class="dropdown-menu m-0"><div class="lang__list" data-lang-list>
+                        <a class="lang__link lang__link_sub dropdown-item" data-ya-lang="en">
+                            <img class="lang__img" src=".\img\lang\lang__en.png" alt="en">
+                        </a>
+                        <a class="lang__link lang__link_sub dropdown-item" data-ya-lang="hi">
+                            <img class="lang__img" src=".\img\lang\lang__hi.png" alt="hi">
+                        </a>
+                    </div></div>
+                </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
             <div class="d-none d-lg-flex align-items-center ps-4">
@@ -192,6 +213,8 @@ body {
             </div>
         </div>
     </nav>
+    
+
     <!-- Navbar End -->
             
             <!-- Slider Section Start -->
@@ -236,7 +259,9 @@ body {
 
 
     <!--trying about and notice segment-->
-
+        
+<div class="container-fluid py-5">
+    <div class="container py-5">
         <div class="container py-2">
             <div class="row g-0 justify-content-center">
                 <div class="row">
@@ -257,7 +282,7 @@ body {
                     <p>Some text..</p>
                   </div>
                 </div>
-    </div>
+    </div></div>   </div>   
 </div>   
 
 
@@ -299,7 +324,7 @@ body {
                         <div class="testimonial-item">
                             <p class="fs-4 fw-normal"><i class="fa fa-quote-left text-secondary me-3"></i>Strength is Life, Weakness is Death. Expansion is Life, Contraction is Death. Love is Life, Hatred is Death.</p>
                             <div class="d-flex align-items-center">
-                                <img class="img-fluid p-1 bg-secondary" src="img/testimonial-1.jpg" alt="">
+                                <img img class="rounded-circle me-2" src="https://2.gravatar.com/avatar/dc9e02aea18c7600ff3e159c6431b0f2" alt="">
                                 <div class="ps-3">
                                     <h3>- Swami Vivekananda -</h3>
                                     <span class="text-uppercase">Profession</span>
@@ -312,7 +337,7 @@ body {
                         <div class="testimonial-item">
                             <p class="fs-4 fw-normal"><i class="fa fa-quote-left text-secondary me-3"></i>Take up one idea. Make that one idea your life  think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body, be full of that idea, and just leave every other idea alone. This is the way to success.</p>
                             <div class="d-flex align-items-center">
-                                <img class="img-fluid p-1 bg-secondary" src="img/testimonial-2.jpg" alt="">
+                                <img img class="rounded-circle me-2" src="https://2.gravatar.com/avatar/dc9e02aea18c7600ff3e159c6431b0f2" alt="">
                                 <div class="ps-3">
                                     <h3>- Swami Vivekananda -</h3>
                                     <span class="text-uppercase">Profession</span>
@@ -338,7 +363,7 @@ body {
             <div class="row g-3">
                 <div class="col-xl-4 col-lg-6">
                     <div class="blog-item bg-primary">
-                        <img class="img-fluid w-100" src="https://scppsgbpuat.files.wordpress.com/2022/02/whatsapp-image-2022-02-04-at-21.25.39.jpeg" alt="">
+                        <img class="img-fluid img-thumbnail mx-auto" style="width: 800px;height: 250px;" src="https://scppsgbpuat.files.wordpress.com/2022/02/whatsapp-image-2022-02-04-at-21.25.39.jpeg" alt="">
                         <div class="d-flex align-items-center">
                             <div class="bg-secondary mt-n4 d-flex flex-column flex-shrink-0 justify-content-center text-center me-4" style="width: 60px; height: 100px;">
                                 <i class="fa fa-calendar-alt text-primary mb-2"></i>
@@ -361,7 +386,7 @@ body {
                 </div>
                 <div class="col-xl-4 col-lg-6">
                     <div class="blog-item bg-primary">
-                        <img class="img-fluid w-100" src="https://cdn.isha.ws/public/wallpapers/wallpaper/shiva-the-adiyogi.jpg" alt="">
+                        <img class="img-fluid img-thumbnail mx-auto" style="width: 800px; height: 250px;" src="https://cdn.isha.ws/public/wallpapers/wallpaper/shiva-the-adiyogi.jpg" alt="">
                         <div class="d-flex align-items-center">
                             <div class="bg-secondary mt-n4 d-flex flex-column flex-shrink-0 justify-content-center text-center me-4" style="width: 60px; height: 100px;">
                                 <i class="fa fa-calendar-alt text-primary mb-2"></i>
@@ -384,7 +409,7 @@ body {
                 </div>
                 <div class="col-xl-4 col-lg-6">
                     <div class="blog-item bg-primary">
-                        <img class="img-fluid w-100" src="https://scppsgbpuat.files.wordpress.com/2022/02/azadhindfauj.jpg" alt="">
+                        <img class="img-fluid img-thumbnail mx-auto" style="width: 800px;height: 250px;" src="https://scppsgbpuat.files.wordpress.com/2022/02/azadhindfauj.jpg" alt="">
                         <div class="d-flex align-items-center">
                             <div class="bg-secondary mt-n4 d-flex flex-column flex-shrink-0 justify-content-center text-center me-4" style="width: 60px; height: 100px;">
                                 <i class="fa fa-calendar-alt text-primary mb-2"></i>
@@ -410,65 +435,99 @@ body {
     </div>
     <!-- Blog End -->
 
-    
-
-<!--work spaCE for comment-->
-<section>
-    <div class="container-fluid bg-primary bg-testimonial py-5" style="margin: 10px 0;">
-        <div class="container py-5">
-            <div class="row g-0 justify-content-center">
-                <div class="col-lg-10">
-                    <h1 class="display-8 mb-4">Feedback Box</h1>
-                    <div class="owl-carousel testimonial-carousel">
-                        <!--start custom message-->
-                        <div class="testimonial-item">
-                            <div class="d-flex align-items-center">
-                                <!--img class="img-fluid p-1 bg-secondary" src="img/testimonial-1.jpg" alt=""-->
-                                <div class="ps-3">
-                                    <div class="rt-container">
-                                        <div class="col-rt-10">
-                                            <div class="Scriptcontent">  
-                                               </div>
-                                          </div>
-                                    <!--span class="text-uppercase">Profession</span-->
-                                </div>
-                            </div>
+<!-- Team Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+            <h1 class="display-5">Dedicated Team Members</h1>
+            <hr class="w-25 mx-auto text-primary" style="opacity: 1;">
+        </div>
+        <div class="row g-3">
+            <div class="col-lg-4 col-md-6">
+                <div class="team-item">
+                    <img class="img-fluid img-thumbnail mx-auto" style="width: 600px; height: 350px;" src="https://scontent.fagr1-4.fna.fbcdn.net/v/t39.30808-6/217393290_191242409704132_4991412305816226393_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=C6LiEek8i74AX-xYc56&_nc_ht=scontent.fagr1-4.fna&oh=00_AfA1J5sNEVumRb1zWUgArGPbm8UatMTJvujtogOWmDTgQQ&oe=63C753E3" alt="scp">
+                    <div class="team-text">
+                        <div class="team-social">
+                            <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
+                        <div class="mt-auto mb-3">
+                            <h4 class="mb-1">Full Name</h4>
+                            <span class="text-uppercase">Designation</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-                  
-    <!-- partial:index.partial.html -->
-    <section id="app">
-        <div class="container">
-            <div class="row">
-              <div class="col-6">
-                <div class="comment">
-              <p v-for="items in item" v-text="items"></p>
-                </div><!--End Comment-->
-                </div><!--End col -->
-                </div><!-- End row -->
-            <div class="row">
-              <div class="col-20">
-                <input type="text" name="full_name" placeholder="Full Name..."> 
-            <input type="email" name="email" placeholder="Email Address...">
-            <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
-                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
-              </div><!-- End col -->
-            </div><!--End Row -->
-          </div><!--End Container -->
-        </section><!-- end App -->
-              <!-- partial -->
-              <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
-              <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-              <script  src="comment/js/script.js"></script>
-                         
-                      </div>
-                  </div>
-                  </div>
-              </section>
+            <div class="col-lg-4 col-md-6">
+                <div class="team-item">
+                    <img class="img-fluid img-thumbnail mx-auto" style="width: 600px; height: 350px;" src="https://scontent.fagr1-4.fna.fbcdn.net/v/t39.30808-6/217393290_191242409704132_4991412305816226393_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=C6LiEek8i74AX-xYc56&_nc_ht=scontent.fagr1-4.fna&oh=00_AfA1J5sNEVumRb1zWUgArGPbm8UatMTJvujtogOWmDTgQQ&oe=63C753E3" alt="">
+                    <div class="team-text">
+                        <div class="team-social">
+                            <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="mt-auto mb-3">
+                            <h4 class="mb-1">Full Name</h4>
+                            <span class="text-uppercase">Designation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="team-item">
+                    <img class="img-fluid img-thumbnail mx-auto" style="width: 600px; height: 350px;" src="https://scontent.fagr1-4.fna.fbcdn.net/v/t39.30808-6/217393290_191242409704132_4991412305816226393_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=C6LiEek8i74AX-xYc56&_nc_ht=scontent.fagr1-4.fna&oh=00_AfA1J5sNEVumRb1zWUgArGPbm8UatMTJvujtogOWmDTgQQ&oe=63C753E3" alt="">
+                    <div class="team-text">
+                        <div class="team-social">
+                            <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="mt-auto mb-3">
+                            <h4 class="mb-1">Full Name</h4>
+                            <span class="text-uppercase">Designation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team End -->
+<!-- Contact Start -->
+<div class="container-fluid py-5">
+        <div class="row justify-content-center position-relative" style=" z-index: 1;">
+            <div class="col-lg-8">
+                <div class="bg-primary p-5 m-5 mb-0">
+                    <h3 class="mb-4">Leave a comment</h3>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control bg-light border-0" placeholder="Subject" style="height: 55px;">
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control bg-light border-0" rows="5" placeholder="Message"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-secondary w-100 py-3" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact End -->
 
-<!--WORK SPACE for comment TERMINATED-->
+
 
 
     <!-- Footer Start -->
@@ -508,26 +567,15 @@ body {
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-primary text-dark py-4">
-        <div class="container">
-            <div class="row g-0">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-md-0">Copyright &copy; <a class="text-dark fw-bold" href="#">Your Site Name</a>. All Rights Reserved.</p>
-                </div>
-                
-            </div>
-        </div>
-    </div>
+    
     <!-- Footer End -->
 
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-secondary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
     
-    <!--Translator part-->
 
-
-<!--Lower floating for lates event info-->
+<!--Lower floating for latest event info-->
 
 <marquee id="bottom_marquee" scrollamount="11">  <div onMouseOver="document.getElementById('bottom_marquee').stop();" onMouseOut="document.getElementById('bottom_marquee').start();">
 
@@ -535,7 +583,7 @@ body {
        
       
       </div>  </marquee>
-      <!--Lower floating for lates event info END-->
+      <!--Lower floating for latest event info END-->
       <script language="javascript">
         window.onload = function() {
           scrollDiv_init();
